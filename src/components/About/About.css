@@ -1,0 +1,135 @@
+.about{
+    height: 100vh;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.about-title{
+    position: relative;
+}
+.about-title h2{
+    /* position: relative; */
+    padding: 0px 30px;
+    font-size: 60px;
+    font-weight: 700;
+}
+.about-title img{
+    position: absolute;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.about-section{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 50px;
+}
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+.para{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 500px;
+}
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.about-skill{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    transition: 1s;
+}
+.about-skill p{
+    font-size: 23px;
+    min-width: 150px;
+    font-weight: 500px;
+}
+.about-skill hr{
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        width: 50%;
+        height: 8px;
+        background:linear-gradient(267deg, #DA7C25 .36%, #B923E1 102.06%) ;
+}
+.about-skill:hover{
+    transform: scale(1.05);
+}
+.acedmics{
+    width: 100%;
+    display: flex;
+    /* flex-direction: row;
+    align-items: center; */
+    justify-content: space-around;
+    margin-bottom: 80px;
+    
+}
+.about-acedmics h2{
+    font-size: 50px;
+    background:linear-gradient(267deg, #DA7C25 .36%, #B923E1 102.06%) ;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* font-weight: 700; */
+}
+.about-acedmics p{
+    font-size: 23px;
+    font-weight: 500;
+}
+@media(max-width:768px)
+{
+    .about{
+        gap: 80px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .about-title h2{
+        font-size: 50px;
+        padding: 0;
+    }
+    .about-title img{
+        width: 130px;
+        right: -20px;
+    }
+    .about-section{
+        flex-direction: column;
+    }
+    .about-left{
+        display: none;
+    }
+    .para{
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .about-skill{
+        gap: 20px;
+        align-items: center;
+    }
+    .about-skill p{
+        font-size: 20px;
+    }
+    .about-skill hr{
+        height: 6px;
+    }
+    .acedmics{
+        justify-content: space-between;
+    }
+    .about-acedmics{
+        font-size: 34px;
+        font-weight: 700;
+    }
+}

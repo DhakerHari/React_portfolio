@@ -1,0 +1,25 @@
+.projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    margin: 80px 170px;
+}
+.project-1{
+    position: relative;
+    border: 2px solid wheat;
+    cursor: pointer;
+    border-radius: 60px;
+    transition: 0.4s;
+}
+.project-1 h1 {
+    padding: 0px 30px;
+    font-size: 20x;
+    font-weight: 900;
+}
+.project-1 p {
+    position: absolute;
+    font-size: 20x;
+    font-weight: 500;
+}
